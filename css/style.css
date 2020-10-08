@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.cabecera {
+    margin-right: 74px;
+    margin-left: 74px;
+}
+
+.cabecera-fila {
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.cabecera img {
+    max-height: 70px;
+}
+
+.cabecera h3 {
+    align-self: center;
+    margin: 7px;
+    font-size: 32px;
+    color: #069b48;
+    font-style: oblique;
+    font-family: serif;
+}
+
+.navegacion {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+.navegacion a {
+    float: left;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navegacion a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navegacion a.active {
+    background-color: #069b48;
+    color: white;
+}
+
+.navegacion-right {
+    float: right;
+}
+
+.contenido {
+    position: relative;
+}
+
+.fila-1 {
+    width: 100%;
+    height: 476px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url('../img/pan_00798.jpg');
+}
+
+.contenido .fila-2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contenido .fila-2 h1 {
+    color: #fbfbfb;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 55px;
+    line-height: 1.9;
+    font-weight: 100;
+    text-shadow: 1px 1px #069b48;
+    font-family: serif;
+}
+
+.titulo-subrayado:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 25px auto 0;
+    background: #ffffff;
+}
+
+.titulo-fila1 {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    line-height: .9;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.informacion-fila1 {
+    display: flex;
+}
+
+.informacion-fila1 .col-1 {
+    padding: 15px;
+    width: 60%;
+}
+
+.informacion-fila1 .col-1 .texto {
+    align-self: center;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.informacion-fila1 .col-1 .texto ul {
+    padding: 15px;
+}
+
+.informacion-fila1 .col-1 .texto ul li {
+    padding-bottom: 18px;
+}
+
+.informacion-fila1 .col-2 {
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.informacion-fila1 .col-2 .seccion1-pagina1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* background-position: -162px 0px; */
+    position: relative;
+    background-image: url(../img/seccion-1.jpg);
+}
+
+.informacion-fila1 .col-2 .seccion1-pagina2 {
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-position: center center;
+    position: relative;
+    background-image: url(../img/OIP.jpg);
+}
+
+.informacion-fila1 .col-2 .seccion1-pagina3 {
+    width: 80%;
+    height: 100%;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    background-image: url(../img/panda_sichuan_509832.jpg);
+}
+
+.informacion-fila1 .col-2 .seccion1-pagina4 {
+    width: 80%;
+    height: 100%;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    background-image: url(../img/conservacion.jpg);
+}
+
+.informacion-fila1 .col-2 .seccion1-pagina5 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/donate_panda_484059.png);
+}
+
+.informacion-fila2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.informacion-fila2 img {
+    width: 55px;
+}
+
+.informacion-fila2 p {
+    font-size: 15px;
+    font-family: serif;
+    font-style: italic;
+}
+
+.pie-pagina {
+    padding: 50px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(326deg, rgb(22 193 98) 20%, rgba(40,155,6,1) 80%);
+}
+
+
+@media screen and (max-width: 650px) {
+    .cabecera {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    .navegacion a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navegacion-right {
+        float: none;
+    }
+
+    .contenido .fila-2 h1 {
+        font-size: 40px;
+    }
+
+    .informacion-fila1 {
+        display: block;
+    }
+
+    .informacion-fila1 .col-1, .informacion-fila1 .col-2 {
+        width: 100%;
+    }
+
+    .informacion-fila1 .col-2 .seccion1-pagina1, .informacion-fila1 .col-2 .seccion1-pagina2 {
+        height: 300px;
+        background-size: auto;
+    }
+
+    .informacion-fila1 .col-2 .seccion1-pagina3 {
+        height: 300px;
+        background-size: cover;
+        background-position: 0px -61px;
+    }
+
+    .informacion-fila1 .col-2 .seccion1-pagina5 {
+        height: 300px;
+        background-size: cover;
+    }
+}
+
+.pagina-2-panda {
+    width: 100%;
+    height: 476px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url('../img/pandas-pagina2.jpg');
+}
+
+.pagina-4-panda {
+    width: 100%;
+    height: 476px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url('../img/pandas-pagina4.jpg');
+}
+
+.pagina-5-panda {
+    width: 100%;
+    height: 476px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url('../img/panda_habitat.jpg');
+}
+
+.pagina-6-panda {
+    width: 100%;
+    height: 476px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url('../img/panda-pagina6.jpg');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

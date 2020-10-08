@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="cabecera">
+        <div class="cabecera-fila">
+            <img src="img/bamboo-clip-art_792887.png" alt="panda-icono">
+            <h3>Ecology life</h3>
+        </div>
+        <!-- Navegación -->
+        <div class="navegacion">
+            <div class="navegacion-right">
+                <a href="index.html">Inicio</a>
+                <a href="pandas.html">Pandas</a>
+                <a href="comida.html">¿Qué comen?</a>
+                <a href="conservacion.html">Conservación</a>
+                <a href="habitat.html">Hábitat</a>
+                <a class="active" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido -->
+    <div class="contenido">
+        <div class="pagina-6-panda"></div>
+        <div class="fila-2">
+            <h1 class="titulo-subrayado">CONTACTA CON NOSOTROS</h1>
+        </div>
+    </div>
+    <div class="seccion-1">
+        <h2 class="titulo-fila1">Para mayor informacón envianos un mensaje</h2>
+
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="nombre" placeholder="Tu nombre..." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="correo">Correo electrónico</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="correo" placeholder="Tu correo.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pais">País</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="pais" required>
+                            <option value="australia">Australia</option>
+                            <option value="china">China</option>
+                            <option value="canada">Canada</option>
+                            <option value="mexico">México</option>
+                            <option value="usa">USA</option>
+                            <option value="venezuela">venezuela</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="mensaje" placeholder="Escribe alguna cosa..." style="height:200px" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <div class="informacion-fila2">
+            <img src="./img/panda-animado.png" alt="" srcset="">
+            <p>"Trabajar para sostener el mundo natural en beneficio de las personas y la naturaleza."</p>
+        </div>
+    </div>
+    <div class="pie-pagina">
+        © 2020 Ecology life - World Wide Fund For Nature.
+        <br><br>
+        &diams; Adriana Arguello &diams;
+    </div>
+</body>
+</html>
